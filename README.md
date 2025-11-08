@@ -2,15 +2,12 @@
 
 ---
 
-
 ## 📘 Visão Geral
 
 Este projeto tem como objetivo **prever o volume semanal de vendas** com base em variáveis econômicas e sazonais, aplicando algoritmos de aprendizado de máquina supervisionados.
 O foco principal é comparar o desempenho entre **Random Forest Regressor** e **XGBoost Regressor**, dois modelos robustos para problemas de previsão contínua.
 
 ---
-
-
 
 ## 🎯 Objetivos
 
@@ -19,7 +16,6 @@ O foco principal é comparar o desempenho entre **Random Forest Regressor** e **
 - Comparar a precisão e a estabilidade dos modelos com métricas estatísticas e **gráficos de erro**.
 
 ---
-
 
 ## 🧩 Etapas do Projeto
 
@@ -49,7 +45,10 @@ Essas features permitem ao modelo aprender padrões de **curto, médio e longo p
 ### 🌲 Random Forest Regressor
 
 - Ensemble de árvores com **bagging** e amostragem aleatória.
-- Hiperparâmetros ajustados: `n_estimators=700`, `max_depth=14`, `min_samples_leaf=2`.
+- Hiperparâmetros ajustados:
+  - `n_estimators=700`
+  - `max_depth=14`
+  - `min_samples_leaf=2`.
 - Ótimo para capturar **relações não lineares** e **interações entre variáveis**.
 
 ### 🚀 XGBoost Regressor
@@ -108,13 +107,6 @@ Esses gráficos ajudam a identificar **padrões temporais de erro**, permitindo 
 
 ### ⚙️ Instalação e Dependências
 
-Clone o repositório:
-
-```bash
-git clone https://github.com/helgg/FIAP_Forecast_Vendas.git
-cd Fiap_forecast
-```
-
 Crie e ative um ambiente virtual (opcional, mas recomendado):
 
 ```bash
@@ -127,4 +119,12 @@ Instale as bibliotecas necessárias:
 
 ```bash
 pip install -r requirements.txt
+```
+
+---
+
+### 📈 Execução do Dashboard (streamlit)
+
+```bash
+streamlit run app.py
 ```
